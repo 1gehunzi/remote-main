@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 import Vue from "vue";
 import App from "./App.vue";
 
@@ -8,4 +9,4 @@ new Vue({
 }).$mount("#app");
 
 window.__RUNTIME_EXPORTS__ = {};
-// window.__RUNTIME_EXPORTS__.Vue = Vue;
+window.__RUNTIME_EXPORTS__.dayjs = dayjs;
