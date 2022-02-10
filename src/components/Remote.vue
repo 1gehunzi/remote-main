@@ -28,11 +28,9 @@ export default {
       // 模拟node环境
       window.module = {};
       window.exports = {};
-
+      // eslint-disable-next-line no-undef
       // 下载远程js
       await scriptLoad(url);
-
-      console.log(" window.module.exports;", window.module.exports);
 
       // 挂载在mode
       this.mode = window.module.exports.default;
